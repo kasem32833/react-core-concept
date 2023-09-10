@@ -1,10 +1,11 @@
-export default function Friend(friend){
 
-    const {name, email } = friend
+export default function Friend({friend}){
+    console.log(friend)
+    const {name, email} = friend;
     return(
-        <div>
-            <h4>Name:</h4>
-            <p>Email:</p>
+        <div className="box">
+            <h4>Name:{name}</h4>
+            <p>Email:{email}</p>
         </div>
     )
 }
